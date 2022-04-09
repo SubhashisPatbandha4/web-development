@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leapyear</title>
+  </head>
+  <body>
+    <script>
+      //6.WAP to check wheather a year is leap year or not
+      //----------------------------------------------------------------------------------------------------------
+
+      while (isNaN(year)) {
+        var year = parseInt(prompt("Enter the year = "));
+      }
+      if (year % 4 == 0) {
+        if (year % 100 == 0) {
+          if (year % 400 == 0) document.write(year, " is a leap year.");
+          else document.write(year, " is not a leap year.");
+        } else document.write(year, " is a leap year.");
+      } else document.write(year, " is not a leap year.");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bin =parseInt(prompt("Enter a binary value = "))
+        dec=0
+        i=0
+        while(bin!=0)
+        {
+            digit=bin%10
+            bin=parseInt(bin/10)
+            dec=dec+Math.pow(2,i)*digit
+            i++
+        }
+        document.write(dec)
+    </script>
+</body>
+</html>

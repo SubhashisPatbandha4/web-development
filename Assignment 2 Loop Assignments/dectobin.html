@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <title>Loop Assignments</title>
+</head>
+<body>
+
+    <script type=text/javascript>
+    var dec=parseInt(prompt("Enter a decimal value = "))
+
+    var bin=[]
+    i=0
+    while(dec!=0)
+    {
+        bin.push(dec%2)
+        dec=parseInt(dec/2)
+        i++
+    }
+    
+    while(i!=0)
+    {
+        i--
+        document.write(bin[i])
+        
+    }
+
+    </script>
+</body>
+</html>

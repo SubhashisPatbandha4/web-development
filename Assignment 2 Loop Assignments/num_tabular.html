@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Assignments</title>
+</head>
+<body>
+  
+    
+ <table>
+
+    <script type=text/javascript>
+
+
+       var x =parseInt(prompt("Enter Lower Limit = "))
+        var y=parseInt(prompt("Enter Higher Limit = "))
+    
+        document.write("<table border ='1'>")
+        document.write("<tr>")
+            document.write("<th>  number </th>")
+            document.write("<th>sq.Root</th>")
+            document.write("<th>Square</th>")
+            document.write("<th>Cube</th>")
+
+        document.write("</tr>")
+     
+        for(var i=x;i<=y;i++)
+        {
+            document.write("<tr>")
+                document.write("<th>"+i+" </th>")
+                document.write("<th>"+Math.sqrt(i)+"</th>")
+                document.write("<th>"+i*i+"</th>")
+                document.write("<th>"+i*i*i+"</th>")
+
+            document.write("</tr>")        }
+        document.writ("</table>")
+    </script>
+</body>
+</html>

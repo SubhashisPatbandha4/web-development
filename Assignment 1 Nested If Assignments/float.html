@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floating round</title>
+  </head>
+  <body>
+    <script>
+      // 5.To conver floating point to integer by floor and ceiling method without built-in function
+      while (isNaN(num)) {
+        var num = parseFloat(prompt("Enter a floating point number = "));
+      }
+
+      var floor = parseInt(num);
+      var ceil = parseInt((num + 1) / 1);
+      document.write(
+        "floor value of ",
+        num,
+        " = ",
+        floor,
+        " and ceiling value of ",
+        num,
+        " = ",
+        ceil
+      );
+    </script>
+  </body>
+</html>

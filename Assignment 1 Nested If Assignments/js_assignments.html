@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ASSIGNMENTS</title>
+</head>
+<body>
+
+    <script language="javascript" type="text/javascript">
+        
+
+
+//    NESTED IF 
+//=====================
+
+//   2.WAP to calculate the electric bill by inputting the previous and present meter reading
+//for 1st 100 units Rs 2.40 per unit, 
+//for next 100 units Rs 3.50 per unit 
+//and for rest units Rs 4.20 per unit)
+//-----------------------------------------------------------------------------------------------
+/*
+        while(isNaN(previous) && isNaN(present))
+        {
+        var previous=prompt("Enter previous meter reading = ");
+        var present=prompt("Enter present meter reading = ");
+        }
+        var totalunit=present-previous;
+        var totalbill=0;
+        var linebreak="<br\>";
+        if(totalunit>0 && totalunit<=100)
+            totalbill=totalunit*2.40;
+
+        else if(totalunit>100 && totalunit<=200)
+            totalbill=(100*2.40)+(totalunit-100)*3.50;
+
+        else
+            totalbill=(100*2.40)+(100*3.50)+(totalunit-200)*4.20;
+
+        document.write("Previous meter reading = ",previous,linebreak);
+
+        document.write("Present meter reading = ",present,linebreak);
+
+        document.write("The total unit is = ",totalunit,linebreak);
+
+        document.write("The total amount to pay is = Rs/-",totalbill);
+ */    
+ // (nested if ) 3.Triangle program 
+ //------------------------------------------------------------------------------------------------------------
+        var a=parseFloat(prompt("Enter the value of side A ="))
+        var b=parseFloat(prompt("Enter the value of side B ="))
+        var c=parseFloat(prompt("Enter the value of side C ="))
+        if((a+b)<= c  || (a+c)<=b || (b+c)<=a)
+            document.write("Error : ABC is not an valid Triangle ,Try again !")
+        else
+        {
+            if(a==b && b==c && c==a)
+                document.write("ABC is an Equilateral Triangle")
+            else if(a==b || b==c || c==a)
+            {
+                if( (a*a+b*b) == c*c || (a*a+c*c)==b*b || (b*b+c*c)==a*a )
+                    document.write("ABC is an Right-angled Isosceles  Triangle")
+                else
+                    document.write("ABC is an Isosceles Triangle")
+            }
+            else
+            {
+                if( (a*a+b*b) == c*c || (a*a+c*c)==b*b || (b*b+c*c)==a*a )
+                    document.write("ABC is Right-angled Scalene  Triangle")
+                else
+                    document.write("ABC is  Scalene Triangle")
+            }
+
+        }
+    </script>
+</body>
+</html>
+
